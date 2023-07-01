@@ -2,12 +2,16 @@
 # Abstraction and Encapsulation
 # July 1, 2023
 
+# Create a class
 class Car:
+    
+    # Create a constructor
     def __init__(self, year_model, make, speed=0):
         self.__year_model = year_model
         self.__make = make
         self.__speed = speed
-        
+    
+    # Create methods
     def accelerate (self):
         self.__speed += 5
         return self.__speed
@@ -18,9 +22,10 @@ class Car:
     
     def get_speed (self):
         return self.__speed
-    
-car1 = Car(2020, "ewan")
-    
-print (car1.accelerate())
-print (car1.brake())
-print (car1.get_speed())
+
+# Create object
+car1 = Car(2020, "Chevrolet")
+
+for i in range (5):
+    car1.accelerate()
+    print ("The current speed is", car1.get_speed())
