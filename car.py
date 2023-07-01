@@ -9,19 +9,18 @@ class Car:
         self.__speed = speed
         
     def accelerate (self):
-        speed = self.__speed + 5 
-        return speed
-    
+        self.__speed += 5
+        return self.__speed
+        
     def brake (self):
-        speed = self.__speed - 5
-        return speed
+        self.__speed -= 5
+        return self.__speed
     
     def get_speed (self):
-        speed = self.__speed
-        return speed
+        return self.__speed
     
-car1 = Car(2020, "ewan", 60)
-
+car1 = Car(2020, "ewan")
+    
 print (car1.accelerate())
 print (car1.brake())
 print (car1.get_speed())
