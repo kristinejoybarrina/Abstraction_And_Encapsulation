@@ -49,8 +49,3 @@ class Fan:
         return self.__color
     
 
-        
-
-# Create objects
-# Display output
-
