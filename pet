@@ -5,6 +5,8 @@
 # Pseudocode
 
 # Create class
+class Pet:
+
 # Create attributes
 # Create methods
 # Display output
