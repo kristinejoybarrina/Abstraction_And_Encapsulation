@@ -19,7 +19,26 @@ class Fan:
         self.__radius = float(radius)
         self.__color = str(color)
 
-# Create methods
+# Create methods (getters and setters)
+    def set_speed (self, speed):
+        self.__speed = speed
+        return self.__speed
+        
+    def set_on (self, on):
+        self.__on = on
+        return self.__on
+        
+    def set_radius (self, radius):
+        self.__radius = radius
+        return self.__radius
+        
+    def set_color (self, color):
+        self.__color = color
+        return self.__color
+        
+
+        
+
 # Create objects
 # Display output
 
