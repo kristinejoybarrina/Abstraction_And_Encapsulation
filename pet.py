@@ -14,14 +14,17 @@ class Pet:
         self.__age = age
 
 # Create methods
-    def set_name (self):
+    def set_name (self, name):
+        self.__name = name
         return self.__name
     
-    def set_animal_type (self):
+    def set_animal_type (self, animal_type):
+        self.__animal_type = animal_type
         return self.__animal_type
     
-    def set_age (self):
-        return self.__age
+    def set_age (self, age):
+        self.__age = age
+        return self.__animal_type
     
     def get_name (self):
         return self.__name
