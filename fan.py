@@ -13,7 +13,7 @@ class Fan:
     FAN = 3
 
 # Create constructor
-    def __init__(self, speed = "slow", on= "False", radius= 5, color="blue"):
+    def __init__(self, speed = "SLOW", on= "False", radius= 5, color="blue"):
         self.__speed = int(speed)
         self.__on = bool(on)
         self.__radius = float(radius)
@@ -36,16 +36,16 @@ class Fan:
         self.__color = color
         return self.__color
         
-    def get_speed (self, speed):
+    def get_speed (self):
         return self.__speed
         
-    def get_on (self, on):
+    def get_on (self):
         return self.__on
         
-    def get_radius (self, radius):
+    def get_radius (self):
         return self.__radius
         
-    def get_color (self, color):
+    def get_color (self):
         return self.__color
     
 
